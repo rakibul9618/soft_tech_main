@@ -1,0 +1,225 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*-------------------------------------
+	Author: CloudCode
+	Copyright © 2022
+
+  * This file contains the styling for the actual template, this
+    is the file you need to edit to change the template's look.
+--------------------------------------- */
+
+:root {
+  --pricing-card-basic-gradient: linear-gradient(to bottom,rgba(255, 255, 255, 1),rgba(255, 255, 255, 1));
+  --pricing-card-gradient: linear-gradient(to bottom,rgba(11, 95, 184, 1),rgba(0, 57, 97, 1));
+}
+
+/* ==== Pricing section start here ==== */
+.center_content .title {
+  text-align: center;
+}
+.center_content p {
+  text-align: center;
+  max-width: 700px;
+  margin: 30px auto 80px;
+}
+
+.pricing .pricing_cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px 40px;
+}
+
+.pricing .pricing_cards .price_card {
+  position: relative;
+  background-image: var(--pricing-card-basic-gradient);
+  color: var(--blue);
+  border-radius: 10px;
+  min-height: 400px;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 8%);
+          box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 8%);
+}
+
+.pricing .pricing_cards .price_card.active:after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image: var(--pricing-card-gradient);
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.pricing .pricing_cards .price_card.active {
+  color: var(--white);
+}
+
+.pricing .pricing_cards .price_card.active .check {
+  background-color: var(--white);
+  color: var(--blue);
+}
+
+.pricing .pricing_cards .price_card.active .price_card_wrapper h3,
+.pricing .pricing_cards .price_card.active .price_card_wrapper h2 {
+  color: var(--white);
+}
+
+.pricing .pricing_cards .price_card.active button {
+  background-color: var(--white);
+  color: var(--blue);
+}
+
+.pricing .pricing_cards .price_card:after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image: var(--pricing-card-gradient);
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.pricing .pricing_cards .price_card:hover:after {
+  opacity: 1;
+}
+
+.pricing .pricing_cards .price_card:hover {
+  color: var(--white);
+}
+
+.pricing .pricing_cards .price_card:hover .check {
+  background-color: var(--white);
+  color: var(--blue);
+}
+
+.pricing .pricing_cards .price_card:hover .price_card_wrapper h3,
+.pricing .pricing_cards .price_card:hover .price_card_wrapper h2 {
+  color: var(--white);
+}
+
+.pricing .pricing_cards .price_card:hover button {
+  background-color: var(--white);
+  color: var(--blue);
+}
+
+.pricing .pricing_cards .price_card_wrapper {
+  position: relative;
+  z-index: 5;
+  padding: 40px 25px;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.pricing .price_card h3,
+.pricing .price_card h2 {
+  color: var(--dark);
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.pricing .price_card h2 {
+  margin: 20px 0 50px 0;
+}
+
+.pricing .price_card .card_list {
+  padding-bottom: 100px;
+}
+
+.pricing .price_card .card_list p {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30px auto;
+  grid-template-columns: 30px auto;
+}
+
+.pricing .price_card .card_list p:not(:first-child) {
+  margin-top: 20px;
+}
+
+.pricing .card_list p .check {
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 50%;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-grid-row-align: start;
+      align-self: start;
+  width: 20px;
+  height: 20px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.pricing .price_card button {
+  background-color: var(--blue);
+  color: var(--white);
+  border: hidden;
+  border-radius: 30px;
+  padding: 8px 30px;
+  width: 80%;
+  max-width: 350px;
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+      -ms-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+@media (min-width: 992px) {
+  .pricing .pricing_cards .price_card {
+    min-height: 600px;
+  }
+  .pricing .pricing_cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1400px) {
+  .pricing .pricing_cards .price_card {
+    min-height: 800px;
+    max-width: 424px;
+  }
+
+  .pricing .pricing_cards .price_card_wrapper {
+    padding: 80px 40px;
+    border-radius: 10px;
+  }
+
+  .pricing .price_card button {
+    padding: 14px 80px;
+    bottom: 80px;
+  }
+}
+
+/* ==== Pricing section end here ==== */

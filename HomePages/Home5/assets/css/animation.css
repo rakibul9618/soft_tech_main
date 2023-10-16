@@ -1,0 +1,46 @@
+/* ===== aos customization start here ===== */
+[data-aos='fade-up'] {
+  -webkit-transform: translate3d(0, 200px, 0);
+          transform: translate3d(0, 200px, 0);
+}
+/* ===== aos customization end here ===== */
+
+#header_bg_down,
+#header_bg_up,
+.hero_section .image_holder,
+.communicate .image_holder {
+  -webkit-animation: slide_up_down 1.5s ease-in-out infinite alternate both;
+  animation: mobile_up_down 1.5s ease-in-out infinite alternate both;
+}
+
+#header_bg_down {
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+
+.hero_section .image_holder {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+@-webkit-keyframes mobile_up_down {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-33px);
+    transform: translateY(-33px);
+  }
+}
+
+@keyframes mobile_up_down {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-33px);
+    transform: translateY(-33px);
+  }
+}

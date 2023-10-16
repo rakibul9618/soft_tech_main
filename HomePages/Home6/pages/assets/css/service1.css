@@ -1,0 +1,121 @@
+/*-------------------------------------
+	Author: CloudCode
+	Copyright © 2022
+
+  * This file contains the styling for the actual template, this
+    is the file you need to edit to change the template's look.
+--------------------------------------- */
+
+/* ==== Choose us start here ==== */
+span.yellow {
+  color: #ff6b00;
+}
+.choose_us .content {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.choose_us .content p {
+  text-align: center;
+  max-width: 900px;
+  margin: 30px auto 0;
+}
+
+.choose_us .choose_us_cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(0, auto);
+  grid-template-columns: repeat(1, minmax(0, auto));
+  gap: 24px;
+}
+
+.choose_us .choose_us_card {
+  border-radius: 6px;
+}
+
+.choose_us .choose_us_card .choose_us_hover {
+  padding: 25px 32px;
+  background-color: var(--transparent);
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.choose_us .choose_us_card .choose_us_hover:hover {
+  background-color: var(--white);
+}
+
+.choose_us .choose_us_card.one {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffeeee), to(#fef2ff));
+  background-image: -o-linear-gradient(top left, #ffeeee, #fef2ff);
+  background-image: linear-gradient(to bottom right, #ffeeee, #fef2ff);
+}
+.choose_us .choose_us_card.two {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#e7ecff), to(#e0f4ff));
+  background-image: -o-linear-gradient(top left, #e7ecff, #e0f4ff);
+  background-image: linear-gradient(to bottom right, #e7ecff, #e0f4ff);
+}
+
+.choose_us .choose_us_card.three {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#fcdbff), to(#fff8ed));
+  background-image: -o-linear-gradient(top left, #fcdbff, #fff8ed);
+  background-image: linear-gradient(to bottom right, #fcdbff, #fff8ed);
+}
+
+.choose_us .choose_us_card.four {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#c5dfc2), to(#e8f6dd));
+  background-image: -o-linear-gradient(top left, #c5dfc2, #e8f6dd);
+  background-image: linear-gradient(to bottom right, #c5dfc2, #e8f6dd);
+}
+
+.choose_us .choose_us_card.five {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#eff2ce), to(#e1efc4));
+  background-image: -o-linear-gradient(top left, #eff2ce, #e1efc4);
+  background-image: linear-gradient(to bottom right, #eff2ce, #e1efc4);
+}
+
+.choose_us .choose_us_card.six {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#e5d1f1), to(#e6cbe9));
+  background-image: -o-linear-gradient(top left, #e5d1f1, #e6cbe9);
+  background-image: linear-gradient(to bottom right, #e5d1f1, #e6cbe9);
+}
+
+.choose_us .choose_us_card .image_holder {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: var(--white);
+  padding: 10px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+}
+
+.choose_us .choose_us_card .image_holder img {
+  width: auto;
+}
+.choose_us .choose_us_card .card_title {
+  text-align: center;
+  margin: 22px 0 18px 0;
+  font-weight: 500;
+}
+.choose_us .choose_us_card p {
+  text-align: center;
+}
+
+@media (min-width: 756px) {
+  .choose_us .choose_us_cards {
+    -ms-grid-columns: minmax(0, auto) minmax(0, auto);
+    grid-template-columns: repeat(2, minmax(0, auto));
+  }
+}
+
+@media (min-width: 992px) {
+  .choose_us .choose_us_cards {
+    -ms-grid-columns: minmax(0, auto) minmax(0, auto) minmax(0, auto);
+    grid-template-columns: repeat(3, minmax(0, auto));
+  }
+}
+/* ==== Choose us end here ==== */

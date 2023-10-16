@@ -1,0 +1,155 @@
+/*-------------------------------------
+	Author: CloudCode
+	Copyright © 2022
+
+  * This file contains the styling for the actual template, this
+    is the file you need to edit to change the template's look.
+--------------------------------------- */
+
+/* ==== Features start here ==== */
+.features .cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+  row-gap: 60px;
+  padding: 0 10px;
+}
+
+.features .cards .card_holder {
+  height: 100%;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 6px 17px 6px rgba(0, 0, 0, 10%);
+          box-shadow: 0px 6px 17px 6px rgba(0, 0, 0, 10%);
+}
+
+.features .cards .feature_card {
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 15px 20px;
+  height: 100%;
+  -webkit-box-shadow: 0px 6px 17px 6px rgba(0, 0, 0, 10%);
+          box-shadow: 0px 6px 17px 6px rgba(0, 0, 0, 10%);
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  -o-transition: transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.features .cards .card_holder:hover .feature_card {
+  -webkit-transform: translateX(10px) translateY(10px);
+      -ms-transform: translateX(10px) translateY(10px);
+          transform: translateX(10px) translateY(10px);
+}
+
+.features .cards .card_holder.one {
+  background-color: #08d9ab;
+}
+
+.features .cards .card_holder.two {
+  background-color: #f7b500;
+}
+
+.features .cards .card_holder.three {
+  background-color: #00d3ff;
+}
+
+.features .cards .card_holder.four {
+  background-color: #e45b4e;
+}
+
+.features .cards .card_holder.five {
+  background-color: #7f54fb;
+}
+
+.features .cards .card_holder.six {
+  background-color: #f44097;
+}
+
+.features .content {
+  text-align: center;
+}
+
+.features .content .title {
+  margin: 20px 0 80px 0;
+}
+
+.features .content .upper_title {
+  font-weight: 600;
+}
+
+
+.features .content .text_black {
+  color: var(--dark);
+}
+
+.features .card_holder .logo_holder {
+  width: 87px;
+  height: 67px;
+  padding: 10px 20px;
+  border-radius: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.features .card_holder.one .logo_holder {
+  background-color: rgba(221, 255, 248, 33%);
+}
+
+.features .card_holder.two .logo_holder {
+  background-color: rgba(235, 273, 1, 5%);
+}
+
+.features .card_holder.three .logo_holder {
+  background-color: rgba(0, 211, 255, 5%);
+}
+
+.features .card_holder.four .logo_holder {
+  background-color: rgba(228, 92, 79, 5%);
+}
+
+.features .card_holder.five .logo_holder {
+  background-color: rgba(127, 84, 251, 5%);
+}
+.features .card_holder.six .logo_holder {
+  background-color: rgba(244, 64, 151, 5%);
+}
+
+.features .card_holder .logo_holder img {
+  width: auto;
+}
+
+.features .cards .feature_card h5 {
+  margin: 25px 0 12px 0;
+}
+
+@media (min-width: 600px) {
+  .features .cards {
+    -ms-grid-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .features .cards .card_holder:hover .feature_card {
+    -webkit-transform: translateX(20px) translateY(20px);
+        -ms-transform: translateX(20px) translateY(20px);
+            transform: translateX(20px) translateY(20px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .features .cards {
+    -ms-grid-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+/* ==== Features end here ==== */

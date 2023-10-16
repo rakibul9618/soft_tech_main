@@ -1,0 +1,148 @@
+/*-------------------------------------
+	Author: CloudCode
+	Copyright © 2022
+
+  * This file contains the styling for the actual template, this
+    is the file you need to edit to change the template's look.
+--------------------------------------- */
+
+/* ===== Solutions start here ===== */
+.solutions .container {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  gap: 30px;
+  text-align: center;
+}
+
+.solutions .content {
+  -ms-grid-row-align: start;
+      align-self: start;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+.solutions .content h2 {
+  color: #0054ab;
+}
+
+.solutions .content .title_details {
+  text-align: center;
+  margin: 30px 0 60px 0;
+}
+
+.solutions .content .list {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 30px;
+}
+
+.solutions .list p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.solutions .list p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.solutions .list p span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 25px;
+  height: 25px;
+  background-color: #0054ab;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.solutions .list p svg {
+  width: 14px;
+  color: var(--white);
+}
+
+.solutions .content button {
+  margin-top: 70px;
+  padding: 10px 30px;
+  color: var(--white);
+  background-color: #0054ab;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 25%);
+          box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 25%);
+  border-radius: 5px;
+  border: 1px solid #0054ab;
+  -webkit-transition: background 0.4s;
+  -o-transition: background 0.4s;
+  transition: background 0.4s;
+}
+
+.solutions .content button:hover {
+  color: #0054ab;
+  background-color: var(--white);
+}
+
+.solutions .image_holder {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  position: relative;
+}
+
+.solutions .image_holder .phone_screens {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media (min-width: 400px) {
+  .solutions .image_holder {
+    width: 80%;
+  }
+}
+
+@media (min-width: 600px) {
+  .solutions .content .list {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .solutions .container {
+    -ms-grid-columns: minmax(auto, 50%) minmax(auto, 50%);
+    grid-template-columns: repeat(2, minmax(auto, 50%));
+    text-align: start;
+  }
+
+  .solutions .image_holder {
+    width: 100%;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+  }
+
+  .solutions .content {
+    justify-items: start;
+  }
+
+  .solutions .content .title_details {
+    text-align: start;
+  }
+}
+/* ===== Solutions end here ===== */
+

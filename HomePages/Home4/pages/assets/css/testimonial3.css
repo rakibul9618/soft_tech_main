@@ -1,0 +1,193 @@
+/*-------------------------------------
+	Author: CloudCode
+	Copyright © 2022
+
+  * This file contains the styling for the actual template, this
+    is the file you need to edit to change the template's look.
+--------------------------------------- */
+
+/* ==== Slider section start here ==== */
+.slider_container .slick_list {
+  background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(234, 244, 255, 1)),to(rgba(253, 254, 255, 1)));
+  background-image: -o-linear-gradient(top,rgba(234, 244, 255, 1),rgba(253, 254, 255, 1));
+  background-image: linear-gradient(to bottom,rgba(234, 244, 255, 1),rgba(253, 254, 255, 1));
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.slider_container .slick_list .content_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  gap: 40px;
+  padding: 20px;
+  border-bottom: 6px solid var(--blue);
+  border-left: 6px solid var(--blue);
+  position: relative;
+}
+
+.slider_container .content {
+  color: var(--blue);
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+.slider_container .content .content_border_line {
+  height: 6px;
+  width: 24%;
+  background-color: var(--blue);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slider_container .content .line {
+  width: 100px;
+  height: 1px;
+  margin: 20px 0;
+  background-color: var(--blue);
+}
+
+.slider_container .content p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.slider_container .slick_list .content_container .image_holder {
+  border-radius: 23px;
+  overflow: hidden;
+  position: static;
+  width: 34%;
+  min-width: 130px;
+  -ms-grid-row-span: 1;
+  grid-row-end: 1;
+}
+
+@media (min-width: 768px) {
+  .slider_container .slick_list {
+    padding: 35px;
+  }
+
+  .slider_container .slick_list .content_container {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    padding: 40px 30px;
+  }
+
+  .slider_container .content {
+    display: block;
+  }
+
+  .slider_container .content p {
+    text-align: start;
+  }
+
+  .slider_container .slick_list .content_container .image_holder {
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    width: 41%;
+    max-width: 250px;
+  }
+}
+
+@media (min-width: 992px) {
+  .slider_container .slick_list {
+    padding: 35px 80px 35px 35px;
+  }
+
+  .slider_container .slick_list .content_container {
+    -ms-grid-columns: auto 20px 35%;
+    grid-template-columns: auto 35%;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    padding: 70px 50px;
+  }
+
+  .slider_container .slick_list .content_container .image_holder {
+    right: -52px;
+    width: 33%;
+    max-width: 280px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .slider_container .slick_list .content_container {
+    -ms-grid-columns: auto 20px 40%;
+    grid-template-columns: auto 40%;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+    padding: 70px 50px;
+  }
+
+  .slider_container .content {
+    min-height: 430px;
+  }
+
+  .slider_container .slick_list .content_container .image_holder {
+    width: 34%;
+    max-width: none;
+  }
+}
+
+/* slider arrow start here */
+
+.slider_container .slider_counter {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -ms-grid-columns: 1fr 55px 1fr 1fr;
+  grid-template-columns: 1fr 55px 1fr 1fr;
+  max-width: 220px;
+  margin: 20px auto 0 auto;
+}
+
+.slider_container .slider_counter .prev,
+.slider_container .slider_counter .next {
+  width: 24px;
+  cursor: pointer;
+  -webkit-transition: color 0.4s;
+  -o-transition: color 0.4s;
+  transition: color 0.4s;
+}
+
+.slider_container .slider_counter .prev:hover,
+.slider_container .slider_counter .next:hover {
+  color: var(--blue);
+}
+
+.slider_container .slider_counter .recent {
+  font-size: 36px;
+  line-height: 1;
+}
+
+.slider_container .slider_counter .total_amount {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+@media (min-width: 1200px) {
+  .slider_container .slider_counter {
+    -ms-grid-columns: 1fr 78px 1fr 1fr;
+    grid-template-columns: 1fr 78px 1fr 1fr;
+    max-width: 300px;
+  }
+
+  .slider_container .slider_counter .prev,
+  .slider_container .slider_counter .next {
+    font-size: 34px;
+  }
+
+  .slider_container .slider_counter .recent {
+    font-size: 56px;
+  }
+}
+/* ==== slider section end here ==== */

@@ -1,0 +1,79 @@
+/* ==== Custom animation css file ==== */
+.hero_section .left_one,
+.hero_section .left_two,
+.hero_section .left_three,
+.hero_section .left_four,
+.hero_section .left_five,
+.hero_section .right_one,
+.hero_section .right_two,
+.hero_section .right_three,
+.hero_section .right_four,
+.hero_section .right_five {
+  position: absolute;
+  -webkit-animation: jump_item 8s cubic-bezier(0.54, 0.085, 0.5, 0.92) infinite;
+          animation: jump_item 8s cubic-bezier(0.54, 0.085, 0.5, 0.92) infinite;
+}
+
+.hero_section .left_two {
+  -webkit-animation-delay: -1.5s;
+          animation-delay: -1.5s;
+}
+.hero_section .left_three {
+  -webkit-animation-delay: -2.5s;
+          animation-delay: -2.5s;
+}
+.hero_section .left_four {
+  -webkit-animation-delay: -3.5s;
+          animation-delay: -3.5s;
+}
+.hero_section .left_five {
+  -webkit-animation-delay: -4.5s;
+          animation-delay: -4.5s;
+}
+
+.hero_section .right_one {
+  -webkit-animation-delay: -4.5s;
+          animation-delay: -4.5s;
+}
+.hero_section .right_two {
+  -webkit-animation-delay: -3.5s;
+          animation-delay: -3.5s;
+}
+.hero_section .right_three {
+  -webkit-animation-delay: -2.5s;
+          animation-delay: -2.5s;
+}
+.hero_section .right_four {
+  -webkit-animation-delay: -1.5s;
+          animation-delay: -1.5s;
+}
+
+@-webkit-keyframes jump_item {
+  0% {
+    -webkit-transform: rotateX(0deg) translateY(0);
+            transform: rotateX(0deg) translateY(0);
+  }
+  50% {
+    -webkit-transform: rotateX(0deg) translateY(-30px);
+            transform: rotateX(0deg) translateY(-30px);
+  }
+  100% {
+    -webkit-transform: rotateX(0deg) translateY(0);
+            transform: rotateX(0deg) translateY(0);
+  }
+}
+
+@keyframes jump_item {
+  0% {
+    -webkit-transform: rotateX(0deg) translateY(0);
+            transform: rotateX(0deg) translateY(0);
+  }
+  50% {
+    -webkit-transform: rotateX(0deg) translateY(-30px);
+            transform: rotateX(0deg) translateY(-30px);
+  }
+  100% {
+    -webkit-transform: rotateX(0deg) translateY(0);
+            transform: rotateX(0deg) translateY(0);
+  }
+}

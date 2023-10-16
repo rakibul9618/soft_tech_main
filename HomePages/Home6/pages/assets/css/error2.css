@@ -1,0 +1,210 @@
+/*-------------------------------------
+	Author: CloudCode
+	Copyright © 2022
+
+  * This file contains the styling for the actual template, this
+    is the file you need to edit to change the template's look.
+--------------------------------------- */
+
+:root {
+  --white: #fff;
+  --dark: #232323;
+  --black: #000;
+  --transparent: transparent;
+  --primary: #ff6b00;
+}
+
+/* ====  default css ==== */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--dark);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+img,
+svg {
+  width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow: visible;
+}
+
+button {
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+button:active {
+  opacity: 0.6;
+}
+
+@media (min-width: 1600px) {
+  button {
+    font-size: 18px;
+  }
+}
+
+/*  customization of p tag */
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+@media (min-width: 576px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1600px) {
+  p {
+    font-size: 18px;
+  }
+}
+
+/* customization of h1 tag */
+
+h1 {
+  text-transform: capitalize;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--primary);
+}
+
+@media (min-width: 576px) {
+  h1 {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 1400px) {
+  h1 {
+    font-size: 55px;
+  }
+}
+
+@media (min-width: 1600px) {
+  h1 {
+    font-size: 64px;
+  }
+}
+
+/* Custom container */
+
+.flex_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.flex_container .container {
+  -webkit-box-flex: 1 !important;
+      -ms-flex-positive: 1 !important;
+          flex-grow: 1 !important;
+  max-width: 1390px !important;
+  padding: 50px 16px;
+  -webkit-box-flex: 0 !important;
+      -ms-flex-positive: 0 !important;
+          flex-grow: 0 !important;
+}
+
+.flex_container .container.padding_0 {
+  padding: 0 16px;
+}
+
+@media (min-width: 768px) {
+  .flex_container .container,
+  .custom_container {
+    padding: 60px 24px;
+  }
+  .flex_container .container.padding_0 {
+    padding: 0 24px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .flex_container .container,
+  .custom_container {
+    padding: 100px 24px;
+  }
+  .flex_container .container.padding_0 {
+    padding: 0 24px;
+  }
+}
+
+/* ==== Error start here ==== */
+.error {
+  text-align: center;
+  min-height: 100vh;
+}
+
+.error .img_holder {
+  width: 50%;
+  margin: 0 auto 80px;
+}
+
+.error p {
+  margin: 30px auto 20px auto;
+  max-width: 510px;
+}
+
+.error button {
+  padding: 10px 26px;
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  color: var(--white);
+  border-radius: 3px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.error button:hover {
+  background-color: var(--white);
+  color: var(--primary);
+}
+
+/* ==== Error end here ==== */

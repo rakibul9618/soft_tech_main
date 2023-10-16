@@ -1,0 +1,493 @@
+/*-------------------------------------
+	Author: CloudCode
+	Copyright © 2022
+
+  * This file contains the styling for the actual template, this
+    is the file you need to edit to change the template's look.
+--------------------------------------- */
+
+/* ==== Lifecycle section start here ==== */
+.life_cycle_container {
+  background-image: var(--contact-us-gradient);
+}
+
+.life_cycle_container img {
+  width: auto;
+}
+
+.life_cycle_container .life_cycle {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  row-gap: 120px;
+  justify-items: center;
+
+  z-index: 10;
+}
+
+.life_cycle_container .life_cycle .cycle_item_container {
+  background-color: #d9e7f4;
+  width: 200px;
+  padding: 9px 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+}
+
+.life_cycle_container .life_cycle .cycle_item {
+  border-radius: 15px;
+  padding: 20px 25px;
+  -webkit-transform: translateX(-24px);
+      -ms-transform: translateX(-24px);
+          transform: translateX(-24px);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 100%;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.life_cycle_container .life_cycle .cycle_item_container:hover {
+  padding: 0px 0;
+  border-radius: 15px;
+}
+
+.life_cycle_container .life_cycle .cycle_item_container:hover .cycle_item {
+  -webkit-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+.life_cycle_container .cycle_item_container.one .cycle_item {
+  background-color: #f7cc0e;
+}
+
+.life_cycle_container .cycle_item_container.two .cycle_item {
+  background-color: #ff7062;
+}
+
+.life_cycle_container .cycle_item_container.three .cycle_item {
+  background-color: #f7b500;
+}
+
+.life_cycle_container .cycle_item_container.four .cycle_item {
+  background-color: #70d4fe;
+}
+
+.life_cycle_container .cycle_item_container.five .cycle_item {
+  background-color: #08d9ab;
+}
+.life_cycle_container .cycle_item_container.six .cycle_item {
+  background-color: #7f54fb;
+}
+.life_cycle_container .cycle_item_container.seven .cycle_item {
+  background-color: #02d2e5;
+}
+
+.life_cycle_container .cycle_item .image_holder {
+  width: 65px;
+  height: 65px;
+  margin-bottom: 26px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.life_cycle_container .cycle_item h5 {
+  color: var(--white);
+  text-align: center;
+}
+
+.life_cycle_container .cycle_item_container .line_arrow {
+  -webkit-transform: rotate(90deg) translateY(0px) translateX(145px);
+      -ms-transform: rotate(90deg) translateY(0px) translateX(145px);
+          transform: rotate(90deg) translateY(0px) translateX(145px);
+  position: absolute;
+}
+.life_cycle_container .cycle_item_container.two .single_curve_arrow,
+.life_cycle_container .cycle_item_container.three .single_curve_arrow_ui,
+.life_cycle_container .cycle_item_container.five .single_curve_line_maintenance,
+.life_cycle_container .cycle_item_container.six .double_curve_arrow {
+  display: none;
+  position: absolute;
+}
+
+@media (min-width: 576px) {
+  .life_cycle_container .life_cycle .cycle_item_container.two,
+  .life_cycle_container .life_cycle .cycle_item_container.six {
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+
+  .life_cycle_container .cycle_item_container.one .line_arrow,
+  .life_cycle_container .cycle_item_container.four .line_arrow,
+  .life_cycle_container .cycle_item_container.five .line_arrow {
+    -webkit-transform: rotate(45deg) translateY(-15px) translateX(200px);
+        -ms-transform: rotate(45deg) translateY(-15px) translateX(200px);
+            transform: rotate(45deg) translateY(-15px) translateX(200px);
+  }
+
+  .life_cycle_container .cycle_item_container.two .line_arrow,
+  .life_cycle_container .cycle_item_container.three .line_arrow,
+  .life_cycle_container .cycle_item_container.six .line_arrow {
+    -webkit-transform: rotate(135deg) translateY(-20px) translateX(190px);
+        -ms-transform: rotate(135deg) translateY(-20px) translateX(190px);
+            transform: rotate(135deg) translateY(-20px) translateX(190px);
+  }
+  .life_cycle_container .life_cycle .cycle_item_container.four {
+    -ms-grid-column-align: start;
+        justify-self: start;
+    -webkit-transform: translateX(30px);
+        -ms-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+}
+
+@media (min-width: 768px) {
+  .life_cycle_container .life_cycle {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .life_cycle_container .cycle_item_container.one .line_arrow,
+  .life_cycle_container .cycle_item_container.five .line_arrow {
+    -webkit-transform: rotate(0deg) translateY(0px) translateX(200px);
+        -ms-transform: rotate(0deg) translateY(0px) translateX(200px);
+            transform: rotate(0deg) translateY(0px) translateX(200px);
+  }
+
+  .life_cycle_container .cycle_item_container.two .line_arrow,
+  .life_cycle_container .cycle_item_container.four .line_arrow,
+  .life_cycle_container .cycle_item_container.six .line_arrow {
+    -webkit-transform: rotate(90deg) translateY(0px) translateX(151px);
+        -ms-transform: rotate(90deg) translateY(0px) translateX(151px);
+            transform: rotate(90deg) translateY(0px) translateX(151px);
+  }
+
+  .life_cycle_container .life_cycle .cycle_item_container.two,
+  .life_cycle_container .life_cycle .cycle_item_container.four,
+  .life_cycle_container .life_cycle .cycle_item_container.six {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+
+  .life_cycle_container .life_cycle .cycle_item_container.three {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    -ms-grid-column-span: 3;
+    grid-column-end: 3;
+  }
+
+  .life_cycle_container .cycle_item_container.three .line_arrow {
+    -webkit-transform: rotate(180deg) translateY(0px) translateX(181px);
+        -ms-transform: rotate(180deg) translateY(0px) translateX(181px);
+            transform: rotate(180deg) translateY(0px) translateX(181px);
+  }
+
+  .life_cycle_container .life_cycle .cycle_item_container.four {
+    -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+
+  .life_cycle_container .life_cycle .cycle_item_container.seven {
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    -ms-grid-column-span: 3;
+    grid-column-end: 3;
+  }
+}
+
+@media (min-width: 992px) {
+  .life_cycle_container .life_cycle {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .life_cycle_container .cycle_item_container.one .line_arrow,
+  .life_cycle_container .cycle_item_container.five .line_arrow {
+    -webkit-transform: rotate(0deg) translateY(0px) translateX(260px);
+        -ms-transform: rotate(0deg) translateY(0px) translateX(260px);
+            transform: rotate(0deg) translateY(0px) translateX(260px);
+  }
+
+  .life_cycle_container .cycle_item_container.three .line_arrow {
+    -webkit-transform: rotate(180deg) translateY(0px) translateX(250px);
+        -ms-transform: rotate(180deg) translateY(0px) translateX(250px);
+            transform: rotate(180deg) translateY(0px) translateX(250px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .life_cycle_container .life_cycle {
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .life_cycle_container .life_cycle .cycle_item_container.three,
+  .life_cycle_container .life_cycle .cycle_item_container.seven {
+    -ms-grid-row: auto;
+        grid-row-start: auto;
+    -ms-grid-column-span: auto;
+    grid-column-end: auto;
+  }
+
+  .life_cycle_container .life_cycle .cycle_item_container.four {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    -ms-grid-column-span: 4;
+    grid-column-end: 4;
+  }
+
+  .life_cycle_container .life_cycle .cycle_item_container.five {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    -ms-grid-column-span: 3;
+    grid-column-end: 3;
+  }
+
+  .life_cycle_container .cycle_item_container.one .line_arrow,
+  .life_cycle_container .cycle_item_container.two .line_arrow {
+    -webkit-transform: rotate(0deg) translateY(0px) translateX(213px);
+        -ms-transform: rotate(0deg) translateY(0px) translateX(213px);
+            transform: rotate(0deg) translateY(0px) translateX(213px);
+  }
+
+  .life_cycle_container .cycle_item_container.three .line_arrow {
+    -webkit-transform: rotate(90deg) translateY(0px) translateX(160px);
+        -ms-transform: rotate(90deg) translateY(0px) translateX(160px);
+            transform: rotate(90deg) translateY(0px) translateX(160px);
+  }
+
+  .life_cycle_container .cycle_item_container.five .line_arrow,
+  .life_cycle_container .cycle_item_container.four .line_arrow {
+    -webkit-transform: rotate(180deg) translateY(0px) translateX(195px);
+        -ms-transform: rotate(180deg) translateY(0px) translateX(195px);
+            transform: rotate(180deg) translateY(0px) translateX(195px);
+  }
+}
+
+@media (min-width: 1400px) {
+  .life_cycle_container .life_cycle {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .life_cycle_container .life_cycle .cycle_item_container.four {
+    -ms-grid-row: auto;
+        grid-row-start: auto;
+    -ms-grid-column-span: auto;
+    grid-column-end: auto;
+  }
+
+  .life_cycle_container .life_cycle .cycle_item_container.five {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    -ms-grid-column-span: 5;
+    grid-column-end: 5;
+  }
+
+  .life_cycle_container .life_cycle .cycle_item_container.six {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    -ms-grid-column-span: 4;
+    grid-column-end: 4;
+  }
+
+  .life_cycle_container .life_cycle .cycle_item_container.seven {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    -ms-grid-column-span: 3;
+    grid-column-end: 3;
+  }
+
+  .life_cycle_container .cycle_item_container.one .line_arrow,
+  .life_cycle_container .cycle_item_container.two .line_arrow,
+  .life_cycle_container .cycle_item_container.three .line_arrow {
+    -webkit-transform: rotate(0deg) translateY(0px) translateX(175px);
+        -ms-transform: rotate(0deg) translateY(0px) translateX(175px);
+            transform: rotate(0deg) translateY(0px) translateX(175px);
+  }
+
+  .life_cycle_container .cycle_item_container.four .line_arrow {
+    -webkit-transform: rotate(90deg) translateY(0px) translateX(150px);
+        -ms-transform: rotate(90deg) translateY(0px) translateX(150px);
+            transform: rotate(90deg) translateY(0px) translateX(150px);
+  }
+
+  .life_cycle_container .cycle_item_container.five .line_arrow,
+  .life_cycle_container .cycle_item_container.six .line_arrow {
+    -webkit-transform: rotate(180deg) translateY(0px) translateX(160px);
+        -ms-transform: rotate(180deg) translateY(0px) translateX(160px);
+            transform: rotate(180deg) translateY(0px) translateX(160px);
+  }
+}
+
+@media (min-width: 1600px) {
+  .life_cycle_container .life_cycle {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 295px;
+  }
+
+  .life_cycle_container .life_cycle .cycle_item_container.five,
+  .life_cycle_container .life_cycle .cycle_item_container.six,
+  .life_cycle_container .life_cycle .cycle_item_container.seven {
+    -ms-grid-row: auto;
+        grid-row-start: auto;
+    -ms-grid-column-span: auto;
+    grid-column-end: auto;
+  }
+
+  .life_cycle_container .life_cycle .cycle_item_container.six {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    -ms-grid-column-span: 5;
+    grid-column-end: 5;
+  }
+
+  .life_cycle_container .life_cycle .cycle_item_container.seven {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    -ms-grid-column-span: 4;
+    grid-column-end: 4;
+  }
+
+  .life_cycle_container .life_cycle .cycle_item_container.one {
+    -ms-grid-column-align: self-start;
+        justify-self: self-start;
+  }
+
+  .life_cycle_container .life_cycle .cycle_item_container h5 {
+    font-size: 18px;
+  }
+
+  .life_cycle_container .cycle_item_container.two .line_arrow,
+  .life_cycle_container .cycle_item_container.three .line_arrow,
+  .life_cycle_container .cycle_item_container.five .line_arrow,
+  .life_cycle_container .cycle_item_container.six .line_arrow {
+    display: none;
+  }
+
+  .life_cycle_container .cycle_item_container.one .line_arrow {
+    -webkit-transform: rotate(0deg) translateY(0px) translateX(160px);
+        -ms-transform: rotate(0deg) translateY(0px) translateX(160px);
+            transform: rotate(0deg) translateY(0px) translateX(160px);
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  .life_cycle_container
+    .life_cycle
+    .cycle_item_container.one:hover
+    .line_arrow {
+    -webkit-transform: rotate(0deg) translateY(0px) translateX(140px);
+        -ms-transform: rotate(0deg) translateY(0px) translateX(140px);
+            transform: rotate(0deg) translateY(0px) translateX(140px);
+  }
+
+  .life_cycle_container .cycle_item_container.two .single_curve_arrow,
+  .life_cycle_container .cycle_item_container.three .single_curve_arrow_ui,
+  .life_cycle_container
+    .cycle_item_container.five
+    .single_curve_line_maintenance,
+  .life_cycle_container .cycle_item_container.six .double_curve_arrow {
+    display: block;
+  }
+
+  .life_cycle_container .cycle_item_container.two .single_curve_arrow {
+    -webkit-transform: translateX(182px) translateY(-57px);
+        -ms-transform: translateX(182px) translateY(-57px);
+            transform: translateX(182px) translateY(-57px);
+  }
+  .life_cycle_container .cycle_item_container.three .single_curve_arrow_ui {
+    -webkit-transform: translateX(100px) translateY(148px);
+        -ms-transform: translateX(100px) translateY(148px);
+            transform: translateX(100px) translateY(148px);
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  .life_cycle_container
+    .cycle_item_container.three:hover
+    .single_curve_arrow_ui {
+    -webkit-transform: translateX(90px) translateY(148px);
+        -ms-transform: translateX(90px) translateY(148px);
+            transform: translateX(90px) translateY(148px);
+  }
+
+  .life_cycle_container .cycle_item_container.four .line_arrow {
+    -webkit-transform: rotate(0deg) translateY(0px) translateX(153px);
+        -ms-transform: rotate(0deg) translateY(0px) translateX(153px);
+            transform: rotate(0deg) translateY(0px) translateX(153px);
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  .life_cycle_container
+    .life_cycle
+    .cycle_item_container.four:hover
+    .line_arrow {
+    -webkit-transform: rotate(0deg) translateY(0px) translateX(135px);
+        -ms-transform: rotate(0deg) translateY(0px) translateX(135px);
+            transform: rotate(0deg) translateY(0px) translateX(135px);
+  }
+
+  .life_cycle_container .cycle_item_container.five .line_arrow {
+    -webkit-transform: rotate(90deg) translateY(-10px) translateX(141px);
+        -ms-transform: rotate(90deg) translateY(-10px) translateX(141px);
+            transform: rotate(90deg) translateY(-10px) translateX(141px);
+  }
+  .life_cycle_container
+    .cycle_item_container.five
+    .single_curve_line_maintenance {
+    -webkit-transform: rotate(0deg) translateY(215px) translateX(-45px);
+        -ms-transform: rotate(0deg) translateY(215px) translateX(-45px);
+            transform: rotate(0deg) translateY(215px) translateX(-45px);
+  }
+
+  .life_cycle_container .cycle_item_container.six .double_curve_arrow {
+    -webkit-transform: rotate(0deg) translateY(-56px) translateX(-176px);
+        -ms-transform: rotate(0deg) translateY(-56px) translateX(-176px);
+            transform: rotate(0deg) translateY(-56px) translateX(-176px);
+  }
+
+  .life_cycle_container .life_cycle .cycle_item_container.three {
+    -webkit-transform: translateY(-200px);
+        -ms-transform: translateY(-200px);
+            transform: translateY(-200px);
+  }
+  .life_cycle_container .life_cycle .cycle_item_container.three,
+  .life_cycle_container .life_cycle .cycle_item_container.four,
+  .life_cycle_container .life_cycle .cycle_item_container.seven {
+    width: 170px;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+
+  .life_cycle_container .life_cycle .cycle_item_container.six {
+    -webkit-transform: translateX(50px);
+        -ms-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+
+  .life_cycle_container .life_cycle .cycle_item_container.seven {
+    -webkit-transform: translateY(-89px) translateX(-10px);
+        -ms-transform: translateY(-89px) translateX(-10px);
+            transform: translateY(-89px) translateX(-10px);
+  }
+
+  .life_cycle_container .life_cycle .cycle_item_container.five,
+  .life_cycle_container .life_cycle .cycle_item_container.six {
+    -ms-grid-column-align: self-end;
+        justify-self: self-end;
+  }
+}
+/* ==== Lifecycle section end here ==== */

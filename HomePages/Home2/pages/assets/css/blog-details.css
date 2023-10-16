@@ -1,0 +1,463 @@
+/*-------------------------------------
+	Author: SoftTech
+	Copyright © 2022
+
+  * This file contains the styling for the actual template, this
+    is the file you need to edit to change the template's look.
+---------------------------------------
+
+This file table contents are outlined below:
+===================
+  1. Root colors
+	2. Blog Details
+	3. Comments
+---------------------------------------*/
+
+/* ==== Root colors ==== */
+:root {
+  --social_icon_bg_blog: #eaeffd;
+}
+
+img,
+svg {
+  width: 100%;
+}
+
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+.search input::-webkit-input-placeholder {
+  color: var(--white);
+  opacity: 1; /* Firefox */
+}
+.search input::-moz-placeholder {
+  color: var(--white);
+  opacity: 1; /* Firefox */
+}
+.search input:-ms-input-placeholder {
+  color: var(--white);
+  opacity: 1; /* Firefox */
+}
+.search input::-ms-input-placeholder {
+  color: var(--white);
+  opacity: 1; /* Firefox */
+}
+.search input::placeholder {
+  color: var(--white);
+  opacity: 1; /* Firefox */
+}
+
+/* Internet Explorer 10-11 */
+.search input:-ms-input-placeholder {
+  color: var(--white);
+}
+
+/* Microsoft Edge */
+.search input::-ms-input-placeholder {
+  color: var(--white);
+}
+
+/* ==== Blog Details start here ==== */
+.blog_details .grid_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+  grid-template-columns: auto;
+  gap: 30px;
+}
+.blog_details .blog_description .img_holder {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.blog_details .blog_description .info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  justify-items: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0px 35px 0px;
+  gap: 20px;
+}
+
+.blog_details .blog_description .info .date {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 30px auto;
+  grid-template-columns: auto auto;
+  gap: 30px;
+}
+
+.blog_details .blog_description .info .date svg {
+  width: 19px;
+}
+
+.blog_details .blog_description .info .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blog_details .blog_description .info .social_icon {
+  width: 30px;
+  height: 30px;
+  background-color: var(--social_icon_bg_blog);
+  color: var(--dark);
+  border-radius: 50%;
+  padding: 9px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.blog_details .blog_description .info .social_icon:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.blog_details .blog_description .info .social_icon:not(:last-child) {
+  margin-right: 10px;
+}
+
+.blog_details .blog_description .info .social_icon svg {
+  max-height: 14px;
+}
+
+.blog_details .blog_description .content .blog_title {
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.blog_details .blogs {
+  -ms-grid-row-align: start;
+      align-self: start;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 50px;
+  -ms-grid-columns: minmax(0, 1fr);
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.blog_details .blogs .search {
+  position: relative;
+}
+
+.blog_details .blogs .search input {
+  width: 100%;
+  background-color: var(--blue);
+  color: var(--white);
+  border: hidden;
+  padding: 14px 58px 14px 16px;
+  border-radius: 4px;
+}
+
+.blog_details .blogs .search svg {
+  width: 25px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.blog_details .blogs .latest_blog,
+.blog_details .blogs .related_blog {
+  padding: 20px;
+  border: 1px solid #bae8ff;
+  border-radius: 7px;
+  background-color: #f1f9ff;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+
+.blog_details .blogs .latest_blog .title,
+.blog_details .blogs .related_blog .title {
+  /* font-size: 19px; */
+  font-weight: 500;
+  color: var(--blue);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.blog_details .blogs .latest_blog .latest_blog_lists,
+.blog_details .blogs .related_blog .related_blog_lists {
+  display: -ms-grid;
+  display: grid;
+  gap: 15px;
+}
+.blog_details .blogs .latest_blog .blog_list,
+.blog_details .blogs .related_blog .blog_list {
+  display: -ms-grid;
+  display: grid;
+  gap: 17px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  cursor: pointer;
+}
+
+.blog_details .blogs .latest_blog .blog_list {
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+}
+
+.blog_details .blogs .related_blog .blog_list {
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+}
+
+.blog_details .latest_blog .blog_list .img_holder,
+.blog_details .related_blog .blog_list .img_holder {
+  border-radius: 5px;
+  overflow: hidden;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.blog_details .latest_blog .blog_list .content .clock,
+.blog_details .related_blog .blog_list .content .clock {
+  width: 19px;
+}
+
+.blog_details .latest_blog .blog_list .content p,
+.blog_details .related_blog .blog_list .content p {
+  text-align: center;
+}
+
+.blog_details .latest_blog .blog_list .content .blog_list_title,
+.blog_details .related_blog .blog_list .content .blog_list_title {
+  color: var(--dark);
+  text-align: center;
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+@media (min-width: 576px) {
+  .blog_details .blog_description .info {
+    -ms-grid-columns: auto auto;
+    grid-template-columns: auto auto;
+  }
+  .blog_details .blog_description .info .social {
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .blog_details .blogs .latest_blog .blog_list {
+    -ms-grid-columns: 70px auto;
+    grid-template-columns: 70px auto;
+  }
+  .blog_details .blogs .related_blog .blog_list {
+    -ms-grid-columns: 100px auto;
+    grid-template-columns: 100px auto;
+  }
+
+  .blog_details .latest_blog .blog_list .img_holder,
+  .blog_details .related_blog .blog_list .img_holder {
+    width: 100%;
+    margin: 0;
+  }
+  .blog_details .blogs .latest_blog .title,
+  .blog_details .blogs .related_blog .title,
+  .blog_details .latest_blog .blog_list .content p,
+  .blog_details .related_blog .blog_list .content p,
+  .blog_details .latest_blog .blog_list .content .blog_list_title,
+  .blog_details .related_blog .blog_list .content .blog_list_title {
+    text-align: start;
+  }
+}
+
+@media (min-width: 765px) {
+  .blog_details .blogs {
+    -ms-grid-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .blog_details .blogs .search {
+    position: relative;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-column-span: 2;
+    grid-column-end: 3;
+  }
+}
+
+@media (min-width: 1100px) {
+  .blog_details .grid_container {
+    -ms-grid-columns: 65% auto;
+    grid-template-columns: 65% auto;
+  }
+  .blog_details .blogs {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .blog_details .blogs .related_blog {
+    margin-top: 80px;
+  }
+  .blog_details .blogs .search {
+    -ms-grid-row: auto;
+        grid-row-start: auto;
+    -ms-grid-column: auto;
+        grid-column-start: auto;
+    grid-column-end: auto;
+  }
+}
+/* ==== Blog Details end here ==== */
+
+/* ==== Comments start here ==== */
+.comments .title {
+  margin-bottom: 45px;
+  font-weight: 600;
+}
+.comments .commenter {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50px 15px auto;
+  grid-template-columns: 50px auto;
+  gap: 15px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 60px;
+}
+.comments .commenter .img_holder {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.comments .commenter .content .name {
+  margin-bottom: 20px;
+}
+
+.comments .commenter .content .name .time {
+  font-size: 14px;
+}
+
+.comments .commenter .content h6 {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.comments .commenter .content .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-top: 20px;
+}
+
+.comments .commenter .content button {
+  padding: 9px 20px;
+  background-color: var(--blue);
+  color: var(--white);
+  border: 1px solid var(--blue);
+  border-radius: 6px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.comments .commenter .content button:hover {
+  background-color: var(--white);
+  color: var(--blue);
+}
+
+.comments form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(0, 1fr);
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.comments form input,
+.comments form textarea {
+  padding: 12px 30px;
+  border-radius: 4px;
+  background-color: #f0f1fa;
+  border: 1px solid #e8e3ff;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.comments form textarea {
+  min-height: 381px;
+}
+
+.comments form .button {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.comments form button {
+  padding: 11px 33px;
+  background-color: var(--blue);
+  color: var(--white);
+  border: 1px solid var(--blue);
+  border-radius: 6px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.comments form button:hover {
+  background-color: var(--white);
+  color: var(--blue);
+}
+
+@media (min-width: 576px) {
+  .comments .commenter {
+    -ms-grid-columns: 88px auto;
+    grid-template-columns: 88px auto;
+  }
+}
+
+@media (min-width: 765px) {
+  .comments form {
+    -ms-grid-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .comments form textarea {
+    grid-column-start: span 2;
+  }
+
+  .comments form .button {
+    grid-column-start: span 2;
+  }
+}
+
+@media (min-width: 1100px) {
+  .comments .commenter,
+  .comments form {
+    width: 65%;
+  }
+  .comments form .button {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+/* ==== Comments end here ==== */
+
+

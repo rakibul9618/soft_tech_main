@@ -1,0 +1,127 @@
+/* 
+ * This file contains the animation for the actual template.
+*/
+
+
+/* ==== aos customization ==== */
+[data-aos='fade-up'] {
+  -webkit-transform: translate3d(0, 250px, 0);
+          transform: translate3d(0, 250px, 0);
+}
+
+/* ==== hero section ==== */
+.hero_section .image_holder img {
+  -webkit-animation: hero_section_img 5s ease-in-out infinite alternate both;
+          animation: hero_section_img 5s ease-in-out infinite alternate both;
+}
+
+@-webkit-keyframes hero_section_img {
+  0% {
+    -webkit-transform: translateX(2%);
+            transform: translateX(2%);
+  }
+  100% {
+    -webkit-transform: translateX(25%);
+            transform: translateX(25%);
+  }
+}
+
+@keyframes hero_section_img {
+  0% {
+    -webkit-transform: translateX(2%);
+            transform: translateX(2%);
+  }
+  100% {
+    -webkit-transform: translateX(25%);
+            transform: translateX(25%);
+  }
+}
+
+/* ==== features ==== */
+.details_container .image_holder {
+  -webkit-animation: front_rectangle 1.5s ease-in-out infinite alternate both;
+          animation: front_rectangle 1.5s ease-in-out infinite alternate both;
+}
+
+@-webkit-keyframes front_rectangle {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-23px);
+            transform: translateY(-23px);
+  }
+}
+
+@keyframes front_rectangle {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-23px);
+            transform: translateY(-23px);
+  }
+}
+
+/* ==== app_store ==== */
+.app_store .image_holder #inner_first,
+.app_store .image_holder #inner_second,
+.app_store .image_holder #outer_second,
+.app_store .image_holder #outer_first {
+  -webkit-animation: app_store_inner_first 3s ease-in-out infinite alternate both;
+          animation: app_store_inner_first 3s ease-in-out infinite alternate both;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+}
+
+@-webkit-keyframes app_store_inner_first {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes app_store_inner_first {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.app_store .image_holder img {
+  -webkit-animation: app_store_img 2s ease-in-out infinite alternate both;
+          animation: app_store_img 2s ease-in-out infinite alternate both;
+}
+
+@-webkit-keyframes app_store_img {
+  0% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -55%);
+            transform: translate(-50%, -55%);
+  }
+}
+
+@keyframes app_store_img {
+  0% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -55%);
+            transform: translate(-50%, -55%);
+  }
+}

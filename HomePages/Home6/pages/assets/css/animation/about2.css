@@ -1,0 +1,27 @@
+/* ==== Custom animation file ==== */
+.details_container .image_holder {
+  -webkit-animation: front_rectangle 1.5s ease-in-out infinite alternate both;
+          animation: front_rectangle 1.5s ease-in-out infinite alternate both;
+}
+
+@-webkit-keyframes front_rectangle {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-23px);
+            transform: translateY(-23px);
+  }
+}
+
+@keyframes front_rectangle {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-23px);
+            transform: translateY(-23px);
+  }
+}

@@ -1,0 +1,149 @@
+/*-------------------------------------
+	Author: CloudCode
+	Copyright © 2022
+
+  * This file contains the styling for the actual template, this
+    is the file you need to edit to change the template's look.
+--------------------------------------- */
+
+/* ==== FAQ start here ==== */
+.faq .content {
+  margin-bottom: 80px;
+}
+
+.faq .yellow {
+  color: #ff6b00;
+}
+
+.faq .content .title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.faq .content p {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.faq_questions .accordion .accordion_title {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 32px 15px auto;
+  grid-template-columns: 32px auto;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+.faq_questions .accordion .accordion_icon {
+  width: 30px;
+  height: 30px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff6b00), to(#ff3d00));
+  background-image: -o-linear-gradient(top, #ff6b00, #ff3d00);
+  background-image: linear-gradient(to bottom, #ff6b00, #ff3d00);
+  border-radius: 50%;
+  color: var(--white);
+  font-weight: 900;
+}
+
+.faq_questions .accordion .accordion_content {
+  margin-left: 57px;
+}
+
+.faq_questions .accordion .accordion_title .faq_title {
+  font-weight: 500;
+}
+
+@media (min-width: 576px) {
+  .faq_questions .accordion .accordion_title {
+    -webkit-column-gap: 25px;
+       -moz-column-gap: 25px;
+            column-gap: 25px;
+  }
+}
+
+/* custom accordion */
+.faq_questions .accordion {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 15px;
+}
+
+.faq_questions .accordion_title:hover {
+  cursor: pointer;
+}
+
+.faq_questions .accordion .toggle {
+  width: 16px;
+  height: 16px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: auto;
+  -webkit-transition: all 0.35s ease;
+  -o-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.faq_questions .accordion .toggle {
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.faq_questions .accordion .toggle[aria-expanded='false'] {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.faq_questions .accordion .toggle .vertical {
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+.faq_questions .accordion .toggle[aria-expanded='false'] .vertical {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.faq_questions .accordion_content {
+  overflow: hidden;
+  max-height: 1000px;
+  padding-bottom: 15px;
+  -webkit-transition: max-height 1s ease-in-out, padding-bottom 0.5s;
+  -o-transition: max-height 1s ease-in-out, padding-bottom 0.5s;
+  transition: max-height 1s ease-in-out, padding-bottom 0.5s;
+}
+
+.faq_questions .accordion_content[aria-expanded='true'] {
+  max-height: 0px;
+  padding-bottom: 0px;
+  -webkit-transition: max-height 0.5s cubic-bezier(0, 1, 0, 1), padding-bottom 0.5s;
+  -o-transition: max-height 0.5s cubic-bezier(0, 1, 0, 1), padding-bottom 0.5s;
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1), padding-bottom 0.5s;
+}
+/* ==== FAQ end here ==== */

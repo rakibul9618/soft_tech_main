@@ -1,0 +1,232 @@
+/*-------------------------------------
+	Author: CloudCode
+	Copyright © 2022
+
+  * This file contains the styling for the actual template, this
+    is the file you need to edit to change the template's look.
+--------------------------------------- */
+
+/* ==== Testimonial start here ==== */
+.testimonial .fixed_height {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.testimonial .line_alignment {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 3px;
+  grid-template-columns: auto 3px;
+}
+
+.testimonial .line_alignment .line {
+  height: 100%;
+  border-radius: 3px;
+  -webkit-box-shadow: -6px 0px #eaeaea;
+          box-shadow: -6px 0px #eaeaea;
+}
+
+.testimonial .commenters {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  max-height: 650px;
+  overflow: scroll;
+  scrollbar-width: none;
+  padding-bottom: 40px;
+}
+
+.testimonial .commenters::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonial .commenters .commenter {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  padding: 30px 27px;
+  width: 92%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.testimonial .commenters .commenter_container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.testimonial .commenter_container.active .active_line {
+  position: absolute;
+  right: 3px;
+  width: 3px;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 70% 20% 10%;
+  grid-template-rows: 70% 20% 10%;
+}
+
+.testimonial .commenter_container.active .active_line span {
+  display: block;
+  border-radius: 20px;
+}
+
+.testimonial .commenter_container.active .active_line span:first-child {
+  background-color: #FF6B00;
+  height: 95%;
+}
+.testimonial .commenter_container.active .active_line span:nth-child(2) {
+  background-color: #21a415;
+  height: 90%;
+}
+.testimonial .commenter_container.active .active_line span:last-child {
+  background-color: #21a415;
+  height: 90%;
+}
+
+.testimonial .commenters .commenter_container.active .commenter {
+  -webkit-animation: background_animate 0.5s linear forwards;
+          animation: background_animate 0.5s linear forwards;
+}
+
+@-webkit-keyframes background_animate {
+  0% {
+    background-color: var(--transparent);
+    -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0);
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0);
+  }
+  100% {
+    background-color: var(--white);
+    -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 7%);
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 7%);
+  }
+}
+
+@keyframes background_animate {
+  0% {
+    background-color: var(--transparent);
+    -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0);
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0);
+  }
+  100% {
+    background-color: var(--white);
+    -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 7%);
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 7%);
+  }
+}
+
+.testimonial .commenter .image_holder {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.testimonial .commenter .info h5 {
+  margin-bottom: 10px;
+}
+
+.testimonial .testimonial_content .title {
+  margin-bottom: 100px;
+}
+
+.testimonial .testimonial_content .content {
+  display: none;
+}
+.testimonial .testimonial_content .content.active {
+  display: block;
+  -webkit-animation: opacity_animate 0.5s linear forwards;
+          animation: opacity_animate 0.5s linear forwards;
+}
+
+@-webkit-keyframes opacity_animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity_animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.testimonial .testimonial_content .review_info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  border-bottom: 2px solid #eaeaea;
+  padding-bottom: 25px;
+  margin-bottom: 40px;
+}
+
+.testimonial .testimonial_content .review_info .info {
+  border-left: 2px solid #FF6B00;
+  padding-left: 10px;
+}
+
+.testimonial .testimonial_content .review_info .rating {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  -ms-grid-column-align: self-end;
+      justify-self: self-end;
+  font-size: 20px;
+  color: #FF6B00;
+}
+
+@media (min-width: 576px) {
+  .testimonial .commenters .commenter {
+    -ms-grid-columns: 100px auto;
+    grid-template-columns: 100px auto;
+    width: 380px;
+    justify-items: start;
+  }
+}
+
+@media (min-width: 992px) {
+  .testimonial .fixed_height {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 45% 40px auto;
+    grid-template-columns: 45% auto;
+    gap: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .testimonial .fixed_height {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 45% 40px auto;
+    grid-template-columns: 45% auto;
+    gap: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .testimonial .commenters .commenter {
+    width: 450px;
+  }
+}
+/* ==== Testimonial end here ==== */

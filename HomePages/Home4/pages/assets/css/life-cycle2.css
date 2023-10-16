@@ -1,0 +1,246 @@
+/*-------------------------------------
+	Author: CloudCode
+	Copyright © 2022
+
+  * This file contains the styling for the actual template, this
+    is the file you need to edit to change the template's look.
+--------------------------------------- */
+
+/* ===== project management start here ===== */
+.project_management {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffffff), to(#f4feff));
+  background-image: -o-linear-gradient(left top, #ffffff, #f4feff);
+  background-image: linear-gradient(to right bottom, #ffffff, #f4feff);
+  position: relative;
+  overflow: hidden;
+}
+
+.project_management .black{
+  color: #444444;
+}
+
+.project_management .container {
+  position: relative;
+}
+
+.project_management .rectangle_up,
+.project_management .rectangle_middle,
+.project_management .rectangle_down,
+.project_management .three_circle_yellow,
+.project_management .double_rectangle_right,
+.project_management .double_rectangle_left {
+  position: absolute;
+}
+
+.project_management .double_rectangle_right,
+.project_management .double_rectangle_left {
+  display: none;
+}
+
+.project_management .double_rectangle_right {
+  width: 80px;
+  top: 80px;
+  right: 0%;
+}
+
+.project_management .double_rectangle_left {
+  width: 80px;
+  top: 21%;
+  left: 0%;
+}
+
+.project_management .rectangle_up,
+.project_management .rectangle_middle,
+.project_management .rectangle_down {
+  width: 50px;
+  -webkit-animation: rotate_item 4s cubic-bezier(0.54, 0.085, 0.5, 0.92) infinite;
+          animation: rotate_item 4s cubic-bezier(0.54, 0.085, 0.5, 0.92) infinite;
+  display: none;
+}
+
+.project_management .rectangle_up {
+  top: 25%;
+  left: 22%;
+}
+
+.project_management .rectangle_middle {
+  top: 43%;
+  right: 22%;
+}
+
+.project_management .rectangle_down {
+  top: 65%;
+  left: 5%;
+}
+
+.project_management .three_circle_yellow {
+  width: 55px;
+  bottom: 10%;
+  right: 19%;
+  -webkit-animation: rotate_item 4s cubic-bezier(0.54, 0.085, 0.5, 0.92) infinite;
+          animation: rotate_item 4s cubic-bezier(0.54, 0.085, 0.5, 0.92) infinite;
+  display: none;
+}
+
+.project_management .content_header {
+  position: relative;
+  z-index: 5;
+}
+
+.project_management .content_header .title {
+  text-align: center;
+  margin-bottom: 100px;
+  color: #21a415;
+}
+
+.project_management .management_details .management {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 50px 1fr;
+  grid-template-columns: auto 50px 1fr;
+}
+
+.project_management .management:nth-child(even) .content {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+}
+.project_management .management:nth-child(even) .emtiy_div {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+}
+
+.project_management .management .arrow {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 50px 1fr;
+  grid-template-rows: 50px 1fr;
+}
+
+.project_management .management .arrow .icon_holder {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+}
+.project_management .management.one .arrow .icon_holder {
+  background-color: rgba(255, 153, 0, 5%);
+}
+.project_management .management.two .arrow .icon_holder {
+  background-color: rgba(0, 231, 175, 5%);
+}
+.project_management .management.three .arrow .icon_holder {
+  background-color: rgba(248, 5, 5, 5%);
+}
+.project_management .management.four .arrow .icon_holder {
+  background-color: rgba(66, 0, 255, 5%);
+}
+
+.project_management .management .arrow_line img {
+  width: auto;
+  margin: auto;
+  display: block;
+  height: 100%;
+}
+
+.project_management .management .arrow .icon_holder img {
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  display: block;
+}
+
+.project_management .management .content {
+  margin-left: 20px;
+}
+
+.project_management .management .content h4 {
+  margin: 20px 0 50px 0;
+}
+
+.project_management .management .content p {
+  max-width: 490px;
+}
+
+@media (min-width: 768px) {
+  .project_management .rectangle_up,
+  .project_management .rectangle_middle,
+  .project_management .rectangle_down,
+  .project_management .three_circle_yellow {
+    display: block;
+  }
+
+  .project_management .management_details .management {
+    -ms-grid-columns: 1fr 30px 100px 30px 1fr;
+    grid-template-columns: 1fr 100px 1fr;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+  }
+  .project_management .management .arrow .icon_holder {
+    width: 100px;
+    height: 100px;
+    padding: 0px;
+  }
+  .project_management .management .content {
+    margin-left: 0px;
+  }
+  .project_management .management .arrow {
+    -ms-grid-rows: 100px 1fr;
+    grid-template-rows: 100px 1fr;
+  }
+  .project_management .management:nth-child(even) .content {
+    -ms-grid-column: auto;
+        grid-column-start: auto;
+    -ms-grid-row: auto;
+        grid-row-start: auto;
+  }
+  .project_management .management:nth-child(even) .emtiy_div {
+    -ms-grid-column: auto;
+        grid-column-start: auto;
+    -ms-grid-row: auto;
+        grid-row-start: auto;
+  }
+  .project_management .management .content h4 {
+    margin: 35px 0 50px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .project_management .rectangle_up,
+  .project_management .rectangle_middle,
+  .project_management .rectangle_down {
+    width: 80px;
+  }
+
+  .project_management .three_circle_yellow {
+    width: 95px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .project_management .double_rectangle_right {
+    top: 14px;
+  }
+  .project_management .double_rectangle_right,
+  .project_management .double_rectangle_left {
+    display: block;
+  }
+}
+
+@media (min-width: 1600px) {
+  .project_management .double_rectangle_right {
+    right: -100px;
+  }
+}
+/* ===== project management end here ===== */

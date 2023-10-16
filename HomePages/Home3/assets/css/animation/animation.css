@@ -1,0 +1,83 @@
+#paper_one {
+  animation: first_paper 3.5s ease-in-out infinite alternate both;
+  transform-origin: 20% 20%;
+  position: relative;
+  transform: translate(85px, 10px) rotate(35deg) scale(0.75);
+}
+
+@keyframes first_paper {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  100% {
+    transform: translate(142px, 0px) rotate(69deg) scale(0.75);
+  }
+}
+
+#paper_two {
+  animation: second_paper 3.5s ease-in-out infinite alternate both;
+  transform-origin: 22% 22%;
+}
+
+@keyframes second_paper {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  100% {
+    transform: translate(87px, -34px) rotate(39deg);
+  }
+}
+
+#standing_man {
+  animation: standing_man 1.5s ease-in-out infinite alternate both;
+  transform: translate(0px, 0px);
+}
+
+@keyframes standing_man {
+  0% {
+    transform: translate(-10px, 10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+#standing_man_plus {
+  animation: standing_man_plus 3s ease-in-out infinite alternate both;
+}
+
+@keyframes standing_man_plus {
+  0% {
+    color: white;
+  }
+  30% {
+    color: white;
+  }
+  50% {
+    color: #0054ab;
+  }
+  70% {
+    color: white;
+  }
+  100% {
+    color: white;
+  }
+}
+
+#message_two,
+#message_one {
+  animation: message 1.5s ease-in-out infinite alternate both;
+}
+
+#message_two {
+  animation: message 1.5s ease-in-out -0.5s infinite alternate both;
+}
+
+@keyframes message {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}

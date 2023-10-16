@@ -1,0 +1,30 @@
+/* ==== Custom animation ==== */
+.communicate .image_holder {
+  -webkit-animation: slide_up_down 1.5s ease-in-out infinite alternate both;
+  animation: mobile_up_down 1.5s ease-in-out infinite alternate both;
+}
+
+
+@-webkit-keyframes mobile_up_down {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-33px);
+    transform: translateY(-33px);
+  }
+}
+
+
+@keyframes mobile_up_down {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-33px);
+    transform: translateY(-33px);
+  }
+}
+

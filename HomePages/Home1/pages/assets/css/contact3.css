@@ -1,0 +1,160 @@
+/*-------------------------------------
+	Author: CloudCode
+	Copyright © 2022
+
+  * This file contains the styling for the actual template, this
+    is the file you need to edit to change the template's look.
+--------------------------------------- */
+
+/* ==== Contact start here ==== */
+.contact_container {
+  background-image: -webkit-gradient(linear,left top, right bottom,from(#fdfffa),to(rgba(255, 255, 255, 90%)));
+  background-image: -o-linear-gradient(left top,#fdfffa,rgba(255, 255, 255, 90%));
+  background-image: linear-gradient(to right bottom,#fdfffa,rgba(255, 255, 255, 90%));
+  overflow: hidden;
+}
+
+.contact_container .container {
+  position: relative;
+}
+
+.contact_container .rope,
+.contact_container .two_circle_gap,
+.contact_container .two_circle_green,
+.contact_container .two_circle_green_two {
+  position: absolute;
+}
+
+.contact_container .rope {
+  width: 65px;
+  top: 60%;
+  left: -250px;
+}
+
+.contact_container .two_circle_gap {
+  width: 120px;
+  top: 72%;
+  right: -200px;
+}
+
+.contact_container .two_circle_green {
+  width: 105px;
+  top: 20%;
+  left: -250px;
+}
+
+.contact_container .two_circle_green_two {
+  width: 105px;
+  top: 4%;
+  right: -150px;
+}
+
+.contact {
+  background-color: var(--white);
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 4px 33px rgba(0, 0, 0, 5%);
+          box-shadow: 0px 4px 33px rgba(0, 0, 0, 5%);
+  display: -ms-grid;
+  display: grid;
+  row-gap: 50px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 15px 20px;
+}
+.contact .content {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+.contact .content img {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+.contact .content p {
+  margin: 20px 0 60px;
+  text-align: center;
+}
+
+.contact form {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 20px;
+}
+
+.contact form input,
+.contact form textarea {
+  background-color: #f8f8f8;
+  border: 0.5px solid #f8f8f8;
+  padding: 6px 15px;
+  border-radius: 3px;
+}
+
+.contact form textarea {
+  min-height: 160px;
+}
+
+.contact form .input_div {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 5px;
+}
+
+.contact form .btn_holder {
+  -ms-grid-column-align: start;
+      justify-self: start;
+  background-image: -webkit-gradient(linear, left top, right top, from(#21a415), to(#0b9008));
+  background-image: -o-linear-gradient(left, #21a415, #0b9008);
+  background-image: linear-gradient(to right, #21a415, #0b9008);
+  border-radius: 3px;
+  padding: 1px;
+  -webkit-box-shadow: 0px 13px 26px -13px #0c9209;
+          box-shadow: 0px 13px 26px -13px #0c9209;
+}
+
+.contact form button {
+  background-color: var(--transparent);
+  border: hidden;
+  padding: 8px 25px;
+  border-radius: 3px;
+  color: var(--white);
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.contact form button:hover {
+  background-color: var(--white);
+  color: var(--green);
+}
+
+@media (min-width: 576px) {
+  .contact {
+    padding: 45px 50px;
+  }
+  .contact .content img {
+    width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact {
+    padding: 45px 50px;
+    -ms-grid-columns: 1fr 30px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+  }
+  .contact .content h4,
+  .contact .content p {
+    -ms-grid-column-align: start;
+        justify-self: start;
+    text-align: start;
+  }
+  .contact .content img {
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
+}
+/* ==== Contact end here ==== */

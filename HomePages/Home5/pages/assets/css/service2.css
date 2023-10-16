@@ -1,0 +1,185 @@
+/*-------------------------------------
+	Author: CloudCode
+	Copyright © 2022
+
+  * This file contains the styling for the actual template, this
+    is the file you need to edit to change the template's look.
+--------------------------------------- */
+
+/* ===== services start here ===== */
+.content_header {
+  text-align: center;
+  max-width: 850px;
+  margin: 0 auto 100px;
+}
+.content_header h4 {
+  margin-bottom: 20px;
+}
+
+.content_header .green {
+  margin-bottom: 20px;
+  color: #21a415;
+}
+.content_header .black {
+  color: var(--dark);
+}
+.content_header p {
+  text-align: center;
+  max-width: 550px;
+  margin: 20px auto 0px;
+}
+
+.services {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffffff), to(#f4feff));
+  background-image: -o-linear-gradient(left top, #ffffff, #f4feff);
+  background-image: linear-gradient(to right bottom, #ffffff, #f4feff);
+  position: relative;
+  overflow: hidden;
+}
+
+.services .rectangle_up,
+.services .rectangle_down,
+.services .rectangle_red,
+.services .three_circle_yellow {
+  position: absolute;
+  top: 0%;
+}
+
+.services .rectangle_red {
+  width: 70px;
+}
+
+.services .three_circle_yellow {
+  width: 60px;
+}
+
+.services .rectangle_up,
+.services .rectangle_down {
+  width: 45px;
+}
+
+.services .content_header,
+.services .service_list {
+  position: relative;
+  z-index: 5;
+}
+
+.services .service_list {
+  display: -ms-grid;
+  display: grid;
+  gap: 90px 24px;
+  -ms-grid-columns: minmax(0, 1fr);
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.services .service {
+  border: 0.5px solid #e6e6e6;
+  background-image: -webkit-gradient(linear, left top, right top, from(#21a415), to(#0b9008));
+  background-image: -o-linear-gradient(left, #21a415, #0b9008);
+  background-image: linear-gradient(to right, #21a415, #0b9008);
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.services .service .bg_holder {
+  position: absolute;
+  bottom: -50px;
+  left: 0px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.services .service .content {
+  height: 100%;
+  padding: 30px 15px;
+  background-color: var(--white);
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.services .service .img_holder {
+  width: 60px;
+  margin: 0 auto;
+}
+
+.services .service .card_title {
+  color: #21a415;
+  margin: 40px 0px 30px 0;
+  text-align: center;
+  font-weight: 500;
+}
+.services .service p {
+  text-align: center;
+}
+
+.services .service:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#21a415), to(#0b9008));
+  background-image: -o-linear-gradient(left, #21a415, #0b9008);
+  background-image: linear-gradient(to right, #21a415, #0b9008);
+  -webkit-transform: translateY(-45px);
+      -ms-transform: translateY(-45px);
+          transform: translateY(-45px);
+}
+.services .service:hover .bg_holder {
+  opacity: 1;
+  visibility: visible;
+}
+
+.services .service:hover .content {
+  background-color: var(--transparent);
+  color: var(--white);
+}
+.services .service:hover h5 {
+  background-color: var(--transparent);
+  color: var(--white);
+}
+
+@media (min-width: 576px) {
+  .services .service .content {
+    padding: 60px 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .services .service_list {
+    -ms-grid-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .services .service .content {
+    padding: 50px 25px;
+  }
+}
+
+@media (min-width: 992px) {
+  .services .rectangle_red {
+    width: 120px;
+  }
+
+  .services .three_circle_yellow {
+    width: 90px;
+  }
+
+  .services .rectangle_up,
+  .services .rectangle_down {
+    width: 75px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .services .service_list {
+    -ms-grid-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* ===== services start here ===== */

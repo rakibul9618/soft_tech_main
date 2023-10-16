@@ -1,0 +1,263 @@
+/*-------------------------------------
+	Author: SoftTech
+	Copyright © 2022
+
+  * This file contains the styling for the actual template, this
+    is the file you need to edit to change the template's look.
+---------------------------------------
+
+This file table contents are outlined below:
+===================
+  1. Blogs
+---------------------------------------*/
+
+/* ==== Blogs start here ==== */
+.blogs {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#fffffe), to(#ffffff));
+  background-image: -o-linear-gradient(left top, #fffffe, #ffffff);
+  background-image: linear-gradient(to right bottom, #fffffe, #ffffff);
+  overflow: hidden;
+}
+
+.blogs .container {
+  position: relative;
+}
+
+.blogs .three_circle_up,
+.blogs .three_circle_down,
+.blogs .rectangle,
+.blogs .two_circle {
+  position: absolute;
+}
+
+.blogs .three_circle_up {
+  width: 50px;
+  top: 0%;
+  right: 0px;
+}
+
+.blogs .three_circle_down {
+  width: 50px;
+  top: 60%;
+  left: -100px;
+}
+
+.blogs .rectangle {
+  width: 35px;
+  top: 80%;
+  right: -80px;
+}
+
+.blogs .two_circle {
+  width: 55px;
+  left: -25px;
+  top: 8%;
+}
+
+.blogs .blog_list {
+  display: -ms-grid;
+  display: grid;
+  gap: 48px 20px;
+  -ms-grid-columns: minmax(0, 1fr);
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  position: relative;
+  z-index: 5;
+}
+
+.blogs .blog_list .blog {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 280px auto 5px;
+  grid-template-rows: 280px auto 5px;
+  background-color: var(--white);
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 4px 31px rgba(0, 0, 0, 12%);
+          box-shadow: 0px 4px 31px rgba(0, 0, 0, 12%);
+  overflow: hidden;
+}
+
+.blogs .blog .content {
+  padding: 20px 30px 26px;
+}
+
+.blogs .blog .img_holder {
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.blogs .blog .img_holder img {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.blogs .blog:hover .img_holder img {
+  -webkit-transform: scale(1.08);
+      -ms-transform: scale(1.08);
+          transform: scale(1.08);
+}
+
+.blogs .blog .img_holder img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.blogs .blog .content .date {
+  margin: 12px 0px 30px;
+  font-size: 14px;
+}
+
+.blogs .blog .content button {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(0, 1fr) 10px minmax(0, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  border: hidden;
+  color: var(--blue);
+  background-color: var(--transparent);
+  margin-top: 35px;
+  font-size: 20px;
+}
+
+.blogs .blog .content button span {
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+.blogs .blog .content button svg {
+  width: 25px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.blogs .blog .green_line {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 0px;
+  background-color: var(--blue);
+  -webkit-transition: width 0.4s;
+  -o-transition: width 0.4s;
+  transition: width 0.4s;
+  border-radius: 10px;
+}
+.blogs .blog:hover .green_line {
+  width: 90%;
+}
+
+.blogs .pagination_div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 140px;
+}
+
+.blogs .pagination_div .page-link.active {
+  background-color: rgba(0, 0, 0, 5%);
+}
+
+.blogs .pagination_div .page-link {
+  color: var(--black);
+  background-color: var(--transparent);
+  width: 44px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #dfdfdf;
+  margin: 0px 5px 0 5px;
+  border-radius: 4px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.blogs .pagination_div .page-link:hover {
+  background-color: rgba(0, 0, 0, 5%);
+  font-weight: 500;
+}
+
+.blogs .pagination_div .page-link.arrow {
+  color: var(--blue);
+  background-color: rgb(137, 156, 235, 5%);
+}
+
+.blogs .pagination_div .page-link:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.blogs .pagination_div .page-link.arrow:hover {
+  color: var(--white);
+  background-color: var(--blue);
+}
+
+.blogs .pagination .page-link svg {
+  width: 20px;
+}
+
+@media (min-width: 576px) {
+  .blogs .pagination_div .page-link {
+    width: 64px;
+    height: 50px;
+    margin: 0px 10px 0 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .blogs .blog_list {
+    -ms-grid-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .blogs .three_circle_up {
+    width: 90px;
+  }
+
+  .blogs .three_circle_down {
+    width: 90px;
+  }
+
+  .blogs .rectangle {
+    width: 75px;
+  }
+
+  .blogs .two_circle {
+    width: 95px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .blogs .blog_list {
+    -ms-grid-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+/* ==== Blogs end here ==== */

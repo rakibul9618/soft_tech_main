@@ -1,0 +1,107 @@
+/* ===== aos customization start here ===== */
+[data-aos='fade-up'] {
+  -webkit-transform: translate3d(0, 200px, 0);
+          transform: translate3d(0, 200px, 0);
+}
+/* ===== aos customization end here ===== */
+
+#right_mobile,
+#center_mobile,
+#left_mobile {
+  -webkit-animation: slide_up_down 1.5s ease-in-out infinite alternate both;
+  animation: slide_up_down 1.5s ease-in-out infinite alternate both;
+}
+
+#left_mobile {
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+#center_mobile {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+#app_store {
+  -webkit-animation: slide_up_down 1.5s ease-in-out infinite alternate both;
+  animation: mobile_up_down 1.5s ease-in-out infinite alternate both;
+}
+
+@-webkit-keyframes mobile_up_down {
+  0% {
+    -webkit-transform: translateY(0) ;
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-33px);
+    transform: translateY(-33px);
+  }
+}
+
+@keyframes mobile_up_down {
+  0% {
+    -webkit-transform: translateY(0) ;
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-33px);
+    transform: translateY(-33px);
+  }
+}
+
+@-webkit-keyframes slide_up_down {
+  0% {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -58%);
+    transform: translate(-50%, -56%);
+  }
+}
+
+@keyframes slide_up_down {
+  0% {
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -58%);
+    transform: translate(-50%, -56%);
+  }
+}
+
+.top_circle {
+  -webkit-animation: slide_up_down 5.5s ease-in-out infinite alternate both;
+  animation: slide_side 5.5s ease-in-out infinite alternate both;
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+
+.bottom_circle {
+  -webkit-animation: slide_side 5.5s ease-in-out infinite alternate both;
+  animation: slide_side 5.5s ease-in-out infinite alternate both;
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+
+@-webkit-keyframes slide_side {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateX(260px);
+    transform: translateX(260px) rotate(360deg);
+  }
+}
+
+@keyframes slide_side {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translateX(260px);
+    transform: translateX(260px) rotate(360deg);
+  }
+}

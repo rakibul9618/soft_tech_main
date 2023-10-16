@@ -1,0 +1,259 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* ==== Custom animation css file ==== */
+.services .rectangle_down {
+  -webkit-animation: yellow_circle 60s linear infinite alternate both;
+  animation: yellow_circle 60s linear infinite alternate both;
+}
+
+@-webkit-keyframes yellow_circle {
+  0% {
+    top: 100%;
+    left: 49%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    top: -10%;
+    left: 49%;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  26% {
+    top: -10%;
+    left: 100%;
+  }
+  50% {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+  55% {
+    top: 93%;
+    left: 35%;
+  }
+  75% {
+    top: 45%;
+    left: 0%;
+    -webkit-transform: rotate(1080deg);
+            transform: rotate(1080deg);
+  }
+  100% {
+    top: 0%;
+    left: 49%;
+    -webkit-transform: rotate(1440deg);
+            transform: rotate(1440deg);
+  }
+}
+
+@keyframes yellow_circle {
+  0% {
+    top: 100%;
+    left: 49%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    top: -10%;
+    left: 49%;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  26% {
+    top: -10%;
+    left: 100%;
+  }
+  50% {
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+  55% {
+    top: 93%;
+    left: 35%;
+  }
+  75% {
+    top: 45%;
+    left: 0%;
+    -webkit-transform: rotate(1080deg);
+            transform: rotate(1080deg);
+  }
+  100% {
+    top: 0%;
+    left: 49%;
+    -webkit-transform: rotate(1440deg);
+            transform: rotate(1440deg);
+  }
+}
+
+.services .rectangle_red {
+  -webkit-animation: big_rope 70s linear infinite alternate both;
+  animation: big_rope 70s linear infinite alternate both;
+}
+
+@-webkit-keyframes big_rope {
+  0% {
+    top: 0%;
+    left: 99%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    top: 94%;
+    left: 74%;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  50% {
+    top: 0%;
+    left: 49.5%;
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+  75% {
+    top: 94%;
+    left: 25%;
+    -webkit-transform: rotate(1080deg);
+            transform: rotate(1080deg);
+  }
+  100% {
+    top: 0%;
+    left: 0%;
+    -webkit-transform: rotate(1440deg);
+            transform: rotate(1440deg);
+  }
+}
+
+@keyframes big_rope {
+  0% {
+    top: 0%;
+    left: 99%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    top: 94%;
+    left: 74%;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  50% {
+    top: 0%;
+    left: 49.5%;
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+  75% {
+    top: 94%;
+    left: 25%;
+    -webkit-transform: rotate(1080deg);
+            transform: rotate(1080deg);
+  }
+  100% {
+    top: 0%;
+    left: 0%;
+    -webkit-transform: rotate(1440deg);
+            transform: rotate(1440deg);
+  }
+}
+
+.services .three_circle_yellow {
+  top: 0%;
+  left: 0%;
+  -webkit-animation: small_rope 90s linear infinite alternate both;
+  animation: small_rope 90s linear infinite alternate both;
+}
+
+@-webkit-keyframes small_rope {
+  0% {
+    top: 0%;
+    left: 0%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  33% {
+    top: 94%;
+    left: 33.33%;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  66% {
+    top: 0%;
+    left: 66.66%;
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+  100% {
+    top: 94%;
+    left: 98%;
+    -webkit-transform: rotate(1440deg);
+            transform: rotate(1440deg);
+  }
+}
+
+@keyframes small_rope {
+  0% {
+    top: 0%;
+    left: 0%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  33% {
+    top: 94%;
+    left: 33.33%;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  66% {
+    top: 0%;
+    left: 66.66%;
+    -webkit-transform: rotate(720deg);
+            transform: rotate(720deg);
+  }
+  100% {
+    top: 94%;
+    left: 98%;
+    -webkit-transform: rotate(1440deg);
+            transform: rotate(1440deg);
+  }
+}
+
+.services .rectangle_up {
+  top: 42%;
+  right: -5%;
+  -webkit-animation: header_rectangle 40s linear infinite alternate both;
+  animation: header_rectangle 40s linear infinite alternate both;
+}
+
+@-webkit-keyframes header_rectangle {
+  0% {
+    top: 42%;
+    right: -5%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    top: 42%;
+    right: 105%;
+    -webkit-transform: rotate(1440deg);
+            transform: rotate(1440deg);
+  }
+}
+
+@keyframes header_rectangle {
+  0% {
+    top: 42%;
+    right: -5%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    top: 42%;
+    right: 105%;
+    -webkit-transform: rotate(1440deg);
+            transform: rotate(1440deg);
+  }
+}
